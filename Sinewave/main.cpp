@@ -12,6 +12,8 @@
 //#include "purdz.h" // contains function decl. for calculateSinusoid
 #include "taylor.hpp" // contains function decl. for askUserFrequency()
 #include "martin.hpp"
+#include <unistd.h> // so that we can use usleep()
+
 #define SR 44100
 #define TWOPI 6.28318530718
 
@@ -28,41 +30,31 @@ double freqToOmega (double thefrequency);
 double calculateSinusoid (int t, double omega);
 
 int askUserFrequency(); // Taylor's
-// use std::cin to put in a temp variable, and return value of that variable
 
-void graphValue(double sinevalue); // this should do the following
+void graphValue(double sinevalue); // this displays the amplitude as a line of ***
 
 
-int main(int argc, const char * argv[]) {
-    // first ask user for frequency...
+int main() {
     double userFrequency;
     double omega;
     
+    // first ask user for frequency...
     userFrequency = askUserFrequency();
-    omega = (double)freqToOmega(userFrequency);
     
-    // convert freq to omega:
+    //then convert the frequency to an "angular frequency" (omega) to use
+    // in sinusoid function f(t) = a * sin (omega*t + phi)
+    // where 'a' is amplitude, omega is an angle (in radians here), t is the running
+    // time that is incremented in a loop, and phi is the initial phase, here 0.
+    omega = (double)freqToOmega(userFrequency);
     
     // then :
     
     // create a loop that will go from 0 to 441
     // for ...
-    for (int i = 0; i < 441; i ++) {
-        // loop 100
-        for (int j = 0; j < 100; j++ ){
-            graphValue(calculateSinusoid((i*100)+j, omega));
-        }
-        
-        // stop for user
-        std::cin ;
-        
-        
-        
+    for (int i = 0; i < 44100; i ++) {
+            graphValue(calculateSinusoid(i, omega));
+            usleep(1); // wait only briefly, just to slow down the display to 'animate' it
     }
-         // within that loop, create a loop 0 to 99 within which calculate sinusoid (using calculateSinusoid) and print the value
-    
-    // If available: replace print the value with display value
-         // at the end of this loop, ask user to press key so that we pause momentarily
-    
+
     return 0;
 }
