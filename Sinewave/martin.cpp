@@ -22,9 +22,12 @@ void graphValue(double sinevalue) {
         for (int i= 0; i < numberof_stars; i ++){
             std::cout << "*";
         }
-        std::cout << "\n";
+        std::cout << "|\n";
     }
-    
+    if (sinevalue == 0) {
+        std::cout << "                    |\n";
+
+    }
     if (sinevalue > 0) {
         numberof_spaces = 20;
         numberof_stars = (sinevalue * 20);
@@ -32,6 +35,7 @@ void graphValue(double sinevalue) {
         for (int i= 0; i < numberof_spaces; i ++){
             std::cout << " ";
         }
+        std::cout << "|";
         for (int i= 0; i < numberof_stars; i ++){
             std::cout << "*";
         }
