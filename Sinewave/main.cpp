@@ -9,18 +9,12 @@
 #include <iostream>
 #include<math.h>
 #include "alex.hpp" // contains function declaration for freqToOmega
-//#include "purdz.h" // contains function decl. for calculateSinusoid
+#include "purdz.hpp" // contains function decl. for calculateSinusoid
 #include "taylor.hpp" // contains function decl. for askUserFrequency()
 #include "martin.hpp"
 #include <unistd.h> // so that we can use usleep()
 
 #define SR 44100
-#define TWOPI 6.28318530718
-
-double calculateSinusoid (int t, double omega) {
-    float val = sin((t*omega*TWOPI/360));
-    return val;
-}
 
 
 // prototype for Alex' function

@@ -11,6 +11,7 @@
 		0A8D52CB223AC55A002F8FE2 /* martin.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A8D52C9223AC55A002F8FE2 /* martin.cpp */; };
 		0A8D52CE223AC5B9002F8FE2 /* alex.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A8D52CC223AC5B9002F8FE2 /* alex.cpp */; };
 		0A8D52D1223AC624002F8FE2 /* taylor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A8D52CF223AC624002F8FE2 /* taylor.cpp */; };
+		0A8D52D4223B0FBB002F8FE2 /* purdz.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A8D52D2223B0FBB002F8FE2 /* purdz.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,6 +35,8 @@
 		0A8D52CD223AC5B9002F8FE2 /* alex.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = alex.hpp; sourceTree = "<group>"; };
 		0A8D52CF223AC624002F8FE2 /* taylor.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = taylor.cpp; sourceTree = "<group>"; };
 		0A8D52D0223AC624002F8FE2 /* taylor.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = taylor.hpp; sourceTree = "<group>"; };
+		0A8D52D2223B0FBB002F8FE2 /* purdz.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = purdz.cpp; sourceTree = "<group>"; };
+		0A8D52D3223B0FBB002F8FE2 /* purdz.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = purdz.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +70,8 @@
 			isa = PBXGroup;
 			children = (
 				0A8D52AF223AB788002F8FE2 /* main.cpp */,
+				0A8D52D2223B0FBB002F8FE2 /* purdz.cpp */,
+				0A8D52D3223B0FBB002F8FE2 /* purdz.hpp */,
 				0A8D52CC223AC5B9002F8FE2 /* alex.cpp */,
 				0A8D52CF223AC624002F8FE2 /* taylor.cpp */,
 				0A8D52D0223AC624002F8FE2 /* taylor.hpp */,
@@ -136,6 +141,7 @@
 			files = (
 				0A8D52CB223AC55A002F8FE2 /* martin.cpp in Sources */,
 				0A8D52B0223AB788002F8FE2 /* main.cpp in Sources */,
+				0A8D52D4223B0FBB002F8FE2 /* purdz.cpp in Sources */,
 				0A8D52D1223AC624002F8FE2 /* taylor.cpp in Sources */,
 				0A8D52CE223AC5B9002F8FE2 /* alex.cpp in Sources */,
 			);
