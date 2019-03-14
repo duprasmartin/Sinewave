@@ -7,6 +7,7 @@
 //
 
 #include "purdz.hpp"
+#define TWOPI 6.28318530718
 
 
 double calculateSinusoid (int t, double omega) {
