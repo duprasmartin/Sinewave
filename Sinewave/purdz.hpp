@@ -10,5 +10,6 @@
 #define purdz_hpp
 
 #include <stdio.h>
+#include<math.h>
 
 #endif /* purdz_hpp */

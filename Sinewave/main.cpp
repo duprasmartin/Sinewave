@@ -7,7 +7,7 @@
 //
 
 #include <iostream>
-#include<math.h>
+//#include<math.h>
 #include "alex.hpp" // contains function declaration for freqToOmega
 #include "purdz.hpp" // contains function decl. for calculateSinusoid
 #include "taylor.hpp" // contains function decl. for askUserFrequency()
