@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		0A8D52B0223AB788002F8FE2 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A8D52AF223AB788002F8FE2 /* main.cpp */; };
+		0A8D52CB223AC55A002F8FE2 /* martin.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A8D52C9223AC55A002F8FE2 /* martin.cpp */; };
+		0A8D52CE223AC5B9002F8FE2 /* alex.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A8D52CC223AC5B9002F8FE2 /* alex.cpp */; };
+		0A8D52D1223AC624002F8FE2 /* taylor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A8D52CF223AC624002F8FE2 /* taylor.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +28,12 @@
 /* Begin PBXFileReference section */
 		0A8D52AC223AB788002F8FE2 /* Sinewave */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Sinewave; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A8D52AF223AB788002F8FE2 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		0A8D52C9223AC55A002F8FE2 /* martin.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = martin.cpp; sourceTree = "<group>"; };
+		0A8D52CA223AC55A002F8FE2 /* martin.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = martin.hpp; sourceTree = "<group>"; };
+		0A8D52CC223AC5B9002F8FE2 /* alex.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = alex.cpp; sourceTree = "<group>"; };
+		0A8D52CD223AC5B9002F8FE2 /* alex.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = alex.hpp; sourceTree = "<group>"; };
+		0A8D52CF223AC624002F8FE2 /* taylor.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = taylor.cpp; sourceTree = "<group>"; };
+		0A8D52D0223AC624002F8FE2 /* taylor.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = taylor.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +67,12 @@
 			isa = PBXGroup;
 			children = (
 				0A8D52AF223AB788002F8FE2 /* main.cpp */,
+				0A8D52CC223AC5B9002F8FE2 /* alex.cpp */,
+				0A8D52CF223AC624002F8FE2 /* taylor.cpp */,
+				0A8D52D0223AC624002F8FE2 /* taylor.hpp */,
+				0A8D52CD223AC5B9002F8FE2 /* alex.hpp */,
+				0A8D52C9223AC55A002F8FE2 /* martin.cpp */,
+				0A8D52CA223AC55A002F8FE2 /* martin.hpp */,
 			);
 			path = Sinewave;
 			sourceTree = "<group>";
@@ -119,7 +134,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A8D52CB223AC55A002F8FE2 /* martin.cpp in Sources */,
 				0A8D52B0223AB788002F8FE2 /* main.cpp in Sources */,
+				0A8D52D1223AC624002F8FE2 /* taylor.cpp in Sources */,
+				0A8D52CE223AC5B9002F8FE2 /* alex.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
